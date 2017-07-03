@@ -1,0 +1,10 @@
+
+
+
+Release V1.1
+1. 增加生成ApiResult的通用方法<T> ApiResult<T> create(final int code, final String msg) 
+
+Release V1.0
+1. 定义ApiResult及相关的辅助类
+2. 定义Lexical常量表示
+3. 定义QuietCloseable接口，RemoteException,PersistentErrorException异常

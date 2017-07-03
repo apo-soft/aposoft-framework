@@ -10,6 +10,10 @@ package cn.aposoft.framework.api;
  * @since 1.0
  */
 public class ApiUtil {
+	public static <T> ApiResult<T> create(final int code, final String msg) {
+		return new BasicApiResult<T>(code, msg);
+	}
+
 	public static <T> ApiResult<T> success(T data) {
 		return new BasicApiResult<T>(ApiResult.SUCCESS, ApiResult.SUCCESS_MESSAGE, data);
 	}
