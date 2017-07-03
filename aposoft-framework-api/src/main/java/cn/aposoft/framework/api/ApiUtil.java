@@ -14,6 +14,10 @@ public class ApiUtil {
 		return new BasicApiResult<T>(code, msg);
 	}
 
+	public static <T> ApiResult<T> create(final int code, final String msg, T data) {
+		return new BasicApiResult<T>(code, msg, data);
+	}
+
 	public static <T> ApiResult<T> success(T data) {
 		return new BasicApiResult<T>(ApiResult.SUCCESS, ApiResult.SUCCESS_MESSAGE, data);
 	}
